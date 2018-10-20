@@ -1,6 +1,9 @@
 package com.neuedu.dao;
 
 import com.neuedu.pojo.UserInfo;
+import com.sun.org.glassfish.gmbal.ParameterNames;
+import org.apache.ibatis.annotations.Param;
+
 import java.util.List;
 
 public interface UserInfoMapper {
@@ -43,4 +46,15 @@ public interface UserInfoMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(UserInfo record);
+
+    /**
+     * 检查用户名
+     * */
+    int checkUsername(String username);
+
+    /**
+     * 根据用户名和密码查询
+     * @Param("username")这个参数中的value值，是根据定义的key来获取username的值，所以写成 username
+     * */
+    UserInfo selectLogin(@Param("username") String username,@Param("password") String password);
 }

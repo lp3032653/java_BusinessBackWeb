@@ -75,4 +75,16 @@
     update_time
     from neuedu_user
   </select>
+
+  <!--  检查用户名是否存在  -->
+  <select id="checkUsername" parameterType="string" resultType="int">
+    select count(1) from neuedu_user where username=#{username} <!--  约定参数名字和接口中的一致  -->
+  </select>
+
+  <select id="selectLogin" parameterType="map" resultMap="BaseResultMap">
+    select id, username, password, email, phone, question, answer, role, create_time,
+    update_time from neuedu_user where username=#{username} and password=#{password}
+  </select>
+
+
 </mapper>
