@@ -47,6 +47,8 @@ public interface UserInfoMapper {
      */
     int updateByPrimaryKey(UserInfo record);
 
+    int updateBySelectedActive(UserInfo userInfo);
+
     /**
      * 检查用户名
      * */
@@ -57,4 +59,38 @@ public interface UserInfoMapper {
      * @Param("username")这个参数中的value值，是根据定义的key来获取username的值，所以写成 username
      * */
     UserInfo selectLogin(@Param("username") String username,@Param("password") String password);
+
+    /**
+     * 检查邮箱
+     * */
+    int checkEmail(String email);
+
+    /**
+     * 根据用户名查询密保问题
+     * */
+    String selectQuestionByUsername(String username);
+
+    /**
+     * 校验用户密保答案
+     * */
+    int  check_forget_answer(@Param("username") String username,@Param("question") String question,@Param("answer") String answer);
+
+    /**
+     * 根据用户名修改密码
+     * */
+    int  updatePasswordByUsername(@Param("username") String username,@Param("password") String newPassword);
+
+    /**
+     * 根据userid和passworldOld查询
+     * */
+    int  selectCountByUserIdAndPassowrd(@Param("userid") int userid,@Param("password") String  password);
+
+    /**
+     * 校验邮箱
+     * */
+    int  checkEmailByUseridAndEamil(@Param("userid") int userid,@Param("emailNew")String email);
+
+
+
+
 }
