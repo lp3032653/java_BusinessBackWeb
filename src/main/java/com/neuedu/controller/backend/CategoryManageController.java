@@ -22,6 +22,7 @@ public class CategoryManageController {
     private IUserService userService;
     @Autowired
     private ICategoryService categoryService;
+
     /**
      * 添加节点
      * */
@@ -41,7 +42,6 @@ public class CategoryManageController {
             return categoryService.addCategory(parentId,categoryName);
         }else{
             return ServerResponse.createByError("用户无权限操作");
-
         }
 
     }

@@ -39,7 +39,6 @@ public class CategoryServiceImpl implements ICategoryService {
 
     @Override
     public ServerResponse getCategory(int categoryId) {
-
         List<Category> categoryList=categoryMapper.findChildCategoryByCategoryId(categoryId);
         return ServerResponse.createBySuccess(categoryList,"成功");
     }
@@ -51,7 +50,7 @@ public class CategoryServiceImpl implements ICategoryService {
             return  ServerResponse.createByError("参数错误");
         }
         Category category=new Category();
-        category.setId(categoryId);
+        category.setId(categoryId);//根据类别id修改类别名字，所以需要传参
         category.setName(categoryName);
         int result=categoryMapper.updateByPrimaryKey(category);
         if(result>0){

@@ -2,8 +2,8 @@ package com.neuedu.common;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-
 import java.io.Serializable;
+
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)//类中值为NULL的属性，不会序列化到json字符串中
 public class ServerResponse<T> implements Serializable {
     //接口的状态码
@@ -32,7 +32,7 @@ public class ServerResponse<T> implements Serializable {
     }
 
     //判断接口返回数据是否成功
-    @JsonIgnore//不在JSON序列化对象中方
+    @JsonIgnore     //不在JSON序列化对象中放
     public boolean isSuccess(){
         return this.status==ResponseCode.SUCCESS.getCode();
     }

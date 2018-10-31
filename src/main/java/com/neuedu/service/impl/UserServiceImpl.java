@@ -21,9 +21,12 @@ import java.util.UUID;
 public class UserServiceImpl implements IUserService{
     @Autowired
     UserInfoMapper userInfoMapper;
+
+    /**
+     * 用户登录
+     * */
     @Override
     public ServerResponse login(String username, String password) {
-
         //step1:校验用户名
         int result = userInfoMapper.checkUsername(username);
         //step2:校验用户名
@@ -40,21 +43,21 @@ public class UserServiceImpl implements IUserService{
             }
         }else{//用户名不存在
             return ServerResponse.createByError("用户名不存在");
-
-
         }
     }
-
+    /**
+     * 用户注册
+     * */
     @Override
     public ServerResponse register(UserInfo userInfo) {
         //step1:校验用户名是否存在
         int result = userInfoMapper.checkUsername(userInfo.getUsername());
-        if(result>0){//用户名存在
+        if(result>0){   //用户名存在
             ServerResponse.createByError("用户名已存在");
         }
         //step2:校验邮箱
         int email_result = userInfoMapper.checkEmail(userInfo.getEmail());
-        if(email_result>0){//邮箱已存在
+        if(email_result>0){ //邮箱已存在
             ServerResponse.createByError("邮箱已存在");
         }
         //MD5加密
@@ -65,7 +68,6 @@ public class UserServiceImpl implements IUserService{
         if(insert_result>0){
             return ServerResponse.createBySuccess("注册成功");
         }
-
         return ServerResponse.createByError("注册失败");
 
     }
@@ -129,7 +131,8 @@ public class UserServiceImpl implements IUserService{
         }
         if (question == null || question.equals("")) {
             return ServerResponse.createByError("密保问题必须传");
-        }    if (answer == null || answer.equals("")) {
+        }
+        if (answer == null || answer.equals("")) {
             return ServerResponse.createByError("密保答案必须传");
         }
         int restult=userInfoMapper.check_forget_answer(username,question,answer);
@@ -213,7 +216,7 @@ public class UserServiceImpl implements IUserService{
     public ServerResponse updateUserInfo(UserInfo user) {
         //校验邮箱是否存在 userid 和 email
         int result = userInfoMapper.checkEmailByUseridAndEamil(user.getId(),user.getEmail());
-        if(result>0){//邮箱已存在
+        if(result>0){   //邮箱已存在
             return ServerResponse.createByError("邮箱存在");
         }
        int update_result =  userInfoMapper.updateBySelectedActive(user);
@@ -226,8 +229,9 @@ public class UserServiceImpl implements IUserService{
 
     @Override
     public ServerResponse selectUserByPageNo(int pageNo, int pageSize) {
+        PageHelper.startPage(pageNo,pageSize);  //pagehelper 一定要放在获取数据之前
         List <UserInfo> userInfoList = userInfoMapper.selectAll();
-        PageHelper.startPage(pageNo,pageSize);
+
         //分页模型
         PageInfo pageInfo = new PageInfo(userInfoList);
         return ServerResponse.createBySuccess(pageInfo,"success");

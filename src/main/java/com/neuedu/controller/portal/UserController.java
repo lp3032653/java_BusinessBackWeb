@@ -29,10 +29,10 @@ public class UserController {
     @RequestMapping(value = "/login.do")
     public ServerResponse  login(String username, String password, HttpSession session){
         ServerResponse serverResponse = userService.login(username,password);
-        if(serverResponse.isSuccess()){//登陆成功
+        if(serverResponse.isSuccess()){ //登陆成功
             session.setAttribute(Const.CURRENT_USER,serverResponse.getData());
         }
-    return serverResponse;
+        return serverResponse;
     }
     /**
      * 注册模块
@@ -53,15 +53,12 @@ public class UserController {
     /**获取登录状态下用户信息*/
     @RequestMapping(value = "/get_user_info.do")
     public  ServerResponse getUserInfo(HttpSession session){
-
         Object o=session.getAttribute(Const.CURRENT_USER);
-        if(o==null){//用户未登录
+        if(o==null){    //用户未登录
             return ServerResponse.createByError("用户未登录或者已过期");
         }
         return ServerResponse.createBySuccess(o,"成功");
     }
-
-
 
     /**
      * 忘记密码--获取密保问题
@@ -134,10 +131,5 @@ public class UserController {
         session.removeAttribute(Const.CURRENT_USER);
         return ServerResponse.createBySuccess("退出成功");
     }
-
-
-
-
-
 
 }

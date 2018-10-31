@@ -23,7 +23,6 @@ public class UserManageController {
     IUserService userService;
     @RequestMapping(value = "/login.do")
     public ServerResponse login(String username,String password,HttpSession session){
-
         ServerResponse serverResponse= userService.login(username,password);
         UserInfo userInfo=(UserInfo) serverResponse.getData();
         if(userInfo.getRole()!= Const.USERROLE.ADMINUSER){ //防止纵向越权
