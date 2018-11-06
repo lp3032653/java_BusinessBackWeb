@@ -34,7 +34,7 @@ public class Const {
 
     public  interface Cart{
 
-        String LIMIT_NUM_SUCCESS="LIMIT_NUM_SUCESS";
+        String LIMIT_NUM_SUCCESS="LIMIT_NUM_SUCCESS";
         String  LIMIT_NUM_FAIL="LIMIT_NUM_FAIL";
 
         int CHECKED=1;//选中
