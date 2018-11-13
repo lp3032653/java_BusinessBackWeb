@@ -7,14 +7,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e57b5845-2c67-4b04-a22b-9c5acfa54cf9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/ShippingController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/ShippingMapper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Shipping.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/IShippingService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ShippingServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ShippingMapper.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/OrderManageController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/OrderController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/IOrderService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/OrderServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderItemVO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderProductVO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderVO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/vo/ShippingVO.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/BusinessBackWeb.iml" afterPath="$PROJECT_DIR$/BusinessBackWeb.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderItemMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/service/ICartService.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/ICartService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/UserServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderItemMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ProductMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/common/Const$Cart.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/common/Const$Cart.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/common/Const.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/common/Const.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/controller/portal/ProductController.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/controller/portal/ProductController.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/dao/CartMapper.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/dao/CartMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/dao/OrderItemMapper.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/dao/OrderItemMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/dao/OrderMapper.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/dao/OrderMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/CartMapper.xml" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/CartMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/OrderItemMapper.xml" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/OrderItemMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/OrderMapper.xml" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/OrderMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/ProductMapper.xml" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/mapper/ProductMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/IProductService.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/IProductService.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/impl/CartServiceImpl.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/impl/CartServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/impl/ProductServiceImpl.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/impl/ProductServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/utils/BigDecimalUtil.class" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/classes/com/neuedu/utils/BigDecimalUtil.class" />
       <change beforePath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/lib/BusinessBackWeb-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/BusinessBackWeb/WEB-INF/lib/BusinessBackWeb-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/dao/CartMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/CartMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/dao/OrderItemMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/OrderItemMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/dao/OrderMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/dao/OrderMapper.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/mapper/OrderItemMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/mapper/OrderItemMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/mapper/OrderMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/mapper/OrderMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/mapper/ProductMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/mapper/ProductMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/service/impl/CartServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/service/impl/CartServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/neuedu/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/neuedu/service/impl/UserServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,71 +79,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Shipping.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Shipping.java">
+      <file leaf-file-name="OrderManageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/OrderManageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
-              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#728#729#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#813#814#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#997#998#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1229#1230#0" expanded="true" />
-                <element signature="e#1267#1268#0" expanded="true" />
-                <element signature="e#1329#1330#0" expanded="true" />
-                <element signature="e#1383#1384#0" expanded="true" />
-                <element signature="e#1427#1428#0" expanded="true" />
-                <element signature="e#1467#1468#0" expanded="true" />
-                <element signature="e#1533#1534#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-                <element signature="e#1631#1632#0" expanded="true" />
-                <element signature="e#1667#1668#0" expanded="true" />
-                <element signature="e#1725#1726#0" expanded="true" />
-                <element signature="e#1775#1776#0" expanded="true" />
-                <element signature="e#1819#1820#0" expanded="true" />
-                <element signature="e#1859#1860#0" expanded="true" />
-                <element signature="e#1925#1926#0" expanded="true" />
-                <element signature="e#1983#1984#0" expanded="true" />
-                <element signature="e#2026#2027#0" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
-                <element signature="e#2129#2130#0" expanded="true" />
-                <element signature="e#2185#2186#0" expanded="true" />
-                <element signature="e#2224#2225#0" expanded="true" />
-                <element signature="e#2259#2260#0" expanded="true" />
-                <element signature="e#2315#2316#0" expanded="true" />
-                <element signature="e#2363#2364#0" expanded="true" />
-                <element signature="e#2399#2400#0" expanded="true" />
-                <element signature="e#2433#2434#0" expanded="true" />
-                <element signature="e#2485#2486#0" expanded="true" />
-                <element signature="e#2531#2532#0" expanded="true" />
-                <element signature="e#2567#2568#0" expanded="true" />
-                <element signature="e#2601#2602#0" expanded="true" />
-                <element signature="e#2653#2654#0" expanded="true" />
-                <element signature="e#2699#2700#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShippingController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/ShippingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="36" column="73" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
+            <state relative-caret-position="850">
+              <caret line="63" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="106" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,54 +91,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IShippingService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IShippingService.java">
+      <file leaf-file-name="OrderMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="520">
+              <caret line="84" column="7" lean-forward="false" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1542027047436" expanded="true" signature="1630:1692" ph="delete from neuedu_order... " />
+                <marker date="1542027047436" expanded="true" signature="1901:2010" ph="insert into neuedu_order... " />
+                <marker date="1542027047436" expanded="true" signature="1901:2303" ph="insert into neuedu_order... " />
+                <marker date="1542027047436" expanded="true" signature="2524:3200" ph="update neuedu_order... " />
+                <marker date="1542027047436" expanded="true" signature="3297:4365" ph="update neuedu_order... " />
+                <marker date="1542027047436" expanded="true" signature="4457:5451" ph="update neuedu_order... " />
+                <marker date="1542027047436" expanded="true" signature="5695:5913" ph="select id, u... neuedu_order" />
+                <marker date="1542027047436" expanded="true" signature="6113:6293" ph="select id, u... neuedu_order" />
+                <marker date="1542027047436" expanded="true" signature="6390:6595" ph="select id, u... neuedu_order" />
+                <marker date="1542027047436" expanded="true" signature="6701:6931" ph="select id, u... neuedu_order" />
+                <marker date="1542027047436" expanded="true" signature="7033:7240" ph="select id, u... neuedu_order" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShippingServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ShippingServiceImpl.java">
+      <file leaf-file-name="IOrderService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IOrderService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="55" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShippingMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/ShippingMapper.java">
+      <file leaf-file-name="OrderServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/OrderServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="23" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="370">
+              <caret line="366" column="9" lean-forward="true" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShippingMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ShippingMapper.xml">
+      <file leaf-file-name="OrderMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="30" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <marker date="1541512406983" expanded="true" signature="312:705" ph="insert INTO neuedu_shopping" />
-                <marker date="1541512406983" expanded="true" signature="788:860" ph="delete from neuedu_shopping... " />
-                <marker date="1541512406983" expanded="true" signature="951:1334" ph="UPDATE neuedu_shopping " />
-                <marker date="1541512406983" expanded="true" signature="1456:1707" ph="select id, u... neuedu_shopping" />
-                <marker date="1541512406983" expanded="true" signature="1818:2048" ph="select id, u... neuedu_shopping" />
-              </folding>
+            <state relative-caret-position="256">
+              <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Const.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/common/Const.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -196,11 +184,15 @@
       <find>select</find>
       <find>interface</find>
       <find>UPDATE</find>
-      <find>insert</find>
       <find>findCartsByUserid</find>
       <find>selectCartProductCount</find>
-      <find>findCartByProductIdAndUserid</find>
       <find>update</find>
+      <find>find</find>
+      <find>insert</find>
+      <find>checkUsername</find>
+      <find>regi</find>
+      <find>selectCheckedCartByUserid</find>
+      <find>findCartByProductIdAndUserid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,22 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/IcategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/ICategoryService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/CategoryMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/utils/DateUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/utils/PropertiesUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/ProductDetailVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/ProductListVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/ProductMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/common/ServerResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/common/ResponseCode.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/UserInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/IUserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/UserManageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/CategoryManageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CategoryServiceImpl.java" />
@@ -237,13 +213,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/springmvc.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/ProductManageController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/UploadController.java" />
         <option value="$PROJECT_DIR$/docs/joda-time" />
         <option value="$PROJECT_DIR$/docs/mybatis-pagehelper" />
         <option value="$PROJECT_DIR$/docs/tomcat配置虚拟目录" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ProductMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/IProductService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/ProductController.java" />
@@ -253,18 +227,36 @@
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/common/Const.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/CartProductVO.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/CartMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/ICartService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/CartController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/pojo/shipping.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/Shipping.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/IShippingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ShippingServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/ShippingMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ShippingMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/orderProductVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderItemVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/IorderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderItemMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/ShippingVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/IOrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderItemMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/CartMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/utils/GuavaCacheUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/CartController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/ICartService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/target/classes/com/neuedu/mapper/ProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/OrderManageController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/OrderServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -304,7 +296,7 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="BusinessBackWeb Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -332,6 +324,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -381,7 +376,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="neuedu" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BusinessBackWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -390,31 +385,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="neuedu" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BusinessBackWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BusinessBackWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BusinessBackWeb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BusinessBackWeb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -427,6 +405,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="create.test.in.the.same.root" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\superlp\Business\BusinessBackWeb\src\main\java\com\neuedu\vo" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -774,16 +757,25 @@
       <workItem from="1541473691722" duration="2008000" />
       <workItem from="1541496976426" duration="100000" />
       <workItem from="1541509957329" duration="2590000" />
-      <workItem from="1541560244421" duration="4600000" />
+      <workItem from="1541560244421" duration="10257000" />
+      <workItem from="1541590998780" duration="8196000" />
+      <workItem from="1541643148620" duration="11753000" />
+      <workItem from="1541670618157" duration="674000" />
+      <workItem from="1541740844305" duration="4610000" />
+      <workItem from="1542000340640" duration="2096000" />
+      <workItem from="1542006150752" duration="8266000" />
+      <workItem from="1542016072620" duration="905000" />
+      <workItem from="1542017000549" duration="4784000" />
+      <workItem from="1542029127232" duration="2633000" />
+      <workItem from="1542075876254" duration="2301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132882000" />
+    <option name="totallyTimeSpent" value="184757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -795,7 +787,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34857142" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4822857" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -803,10 +795,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32990867" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3737143" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26171428" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30857143" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4137143" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20708154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4137143" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2306867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -834,7 +826,7 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="56" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -843,453 +835,854 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/ICategoryService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IShippingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        <state relative-caret-position="208">
+          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderItemVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="44" column="42" lean-forward="false" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="42" />
+        <state relative-caret-position="2607">
+          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/CategoryManageController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderProductVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-952">
-          <caret line="62" column="42" lean-forward="false" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+        <state relative-caret-position="264">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="57" column="1" lean-forward="false" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/ShippingVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="79" column="1" lean-forward="false" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/OrderVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="749">
+          <caret line="160" column="1" lean-forward="false" selection-start-line="160" selection-start-column="1" selection-end-line="160" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderItemMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/CategoryMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/PayInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="32" lean-forward="false" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/utils/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/ProductListVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/github/pagehelper/pagehelper/4.1.0/pagehelper-4.1.0.jar!/com/github/pagehelper/PageInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/ProductDetailVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1287">
-          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="42" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5491">
-          <caret line="210" column="10" lean-forward="false" selection-start-line="210" selection-start-column="10" selection-end-line="210" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/ProductManageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3419">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/tomcat配置虚拟目录">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="31" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/upload.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/mybatis-pagehelper">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/joda-time">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7458">
-          <caret line="249" column="0" lean-forward="false" selection-start-line="249" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1452">
-          <caret line="46" column="33" lean-forward="false" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ProductMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3729">
-          <caret line="113" column="23" lean-forward="false" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/utils/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/utils/GuavaCacheUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="43" column="1" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="222" column="23" lean-forward="false" selection-start-line="222" selection-start-column="22" selection-end-line="222" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test/java/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/CartVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1084">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="228">
+          <caret line="12" column="57" lean-forward="false" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/vo/CartProductVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="123" column="39" lean-forward="false" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+        <state relative-caret-position="561">
+          <caret line="39" column="30" lean-forward="true" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/utils/BigDecimalUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CategoryMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="49" column="72" lean-forward="false" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.0.RELEASE/spring-webmvc-4.2.0.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="403" column="0" lean-forward="false" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.2.0.RELEASE/spring-webmvc-4.2.0.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="469" column="0" lean-forward="false" selection-start-line="469" selection-start-column="0" selection-end-line="469" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/CartMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4488">
-          <caret line="136" column="36" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="36" />
-          <folding>
-            <marker date="1541421995823" expanded="true" signature="1105:1166" ph="delete from neuedu_cart... " />
-            <marker date="1541421995823" expanded="true" signature="1374:1635" ph="insert into neuedu_cart... " />
-            <marker date="1541421995823" expanded="true" signature="1374:1652" ph="insert into neuedu_cart... " />
-            <marker date="1541421995823" expanded="true" signature="1872:2213" ph="update neuedu_cart... " />
-            <marker date="1541421995823" expanded="true" signature="2708:3144" ph="update neuedu_cart... " />
-            <marker date="1541421995823" expanded="true" signature="3388:3522" ph="select id, u... neuedu_cart" />
-            <marker date="1541421995823" expanded="true" signature="3722:3818" ph="select id, u... neuedu_cart" />
-            <marker date="1541421995823" expanded="true" signature="4048:4169" ph="select id, u... neuedu_cart" />
-            <marker date="1541421995823" expanded="true" signature="4253:4323" ph="select count... neuedu_cart" />
-            <marker date="1541421995823" expanded="true" signature="4433:4582" ph="select id, u... neuedu_cart" />
-            <marker date="1541421995823" expanded="true" signature="5034:5116" ph="select IFNUL... " />
-            <marker date="1541421995823" expanded="true" signature="5232:5418" ph="select id, u... neuedu_cart" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.0.RELEASE/spring-web-4.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="133" column="49" lean-forward="true" selection-start-line="133" selection-start-column="49" selection-end-line="133" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3325">
-          <caret line="143" column="69" lean-forward="true" selection-start-line="143" selection-start-column="69" selection-end-line="143" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/ICartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2640">
-          <caret line="85" column="1" lean-forward="false" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;method#deleteByPrimaryKey#0;class#CartMapper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="220" column="31" lean-forward="false" selection-start-line="220" selection-start-column="31" selection-end-line="220" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/common/Const.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1051">
-          <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Shipping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1229#1230#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1329#1330#0" expanded="true" />
-            <element signature="e#1383#1384#0" expanded="true" />
-            <element signature="e#1427#1428#0" expanded="true" />
-            <element signature="e#1467#1468#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1631#1632#0" expanded="true" />
-            <element signature="e#1667#1668#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1775#1776#0" expanded="true" />
-            <element signature="e#1819#1820#0" expanded="true" />
-            <element signature="e#1859#1860#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1983#1984#0" expanded="true" />
-            <element signature="e#2026#2027#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2224#2225#0" expanded="true" />
-            <element signature="e#2259#2260#0" expanded="true" />
-            <element signature="e#2315#2316#0" expanded="true" />
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2399#2400#0" expanded="true" />
-            <element signature="e#2433#2434#0" expanded="true" />
-            <element signature="e#2485#2486#0" expanded="true" />
-            <element signature="e#2531#2532#0" expanded="true" />
-            <element signature="e#2567#2568#0" expanded="true" />
-            <element signature="e#2601#2602#0" expanded="true" />
-            <element signature="e#2653#2654#0" expanded="true" />
-            <element signature="e#2699#2700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ShippingMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="30" column="25" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="9" />
-          <folding>
-            <marker date="1541512406983" expanded="true" signature="312:705" ph="insert INTO neuedu_shopping" />
-            <marker date="1541512406983" expanded="true" signature="788:860" ph="delete from neuedu_shopping... " />
-            <marker date="1541512406983" expanded="true" signature="951:1334" ph="UPDATE neuedu_shopping " />
-            <marker date="1541512406983" expanded="true" signature="1456:1707" ph="select id, u... neuedu_shopping" />
-            <marker date="1541512406983" expanded="true" signature="1818:2048" ph="select id, u... neuedu_shopping" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/ShippingMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ShippingServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="85" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IShippingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1025">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/ShippingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="36" column="73" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="1" />
+        <state relative-caret-position="495">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/ShippingMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3498">
+          <caret line="106" column="62" lean-forward="false" selection-start-line="106" selection-start-column="54" selection-end-line="106" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1551">
+          <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/lang/reflect/InvocationTargetException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/src.zip!/java/util/UUID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="140" column="23" lean-forward="false" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/utils/GuavaCacheUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/OrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/common/ResponseCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/common/ServerResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2165">
+          <caret line="89" column="26" lean-forward="false" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/pojo/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185">
+          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2673">
+          <caret line="85" column="60" lean-forward="false" selection-start-line="85" selection-start-column="57" selection-end-line="85" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1551">
+          <caret line="47" column="61" lean-forward="false" selection-start-line="47" selection-start-column="61" selection-end-line="47" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://MAVEN/com.neuedu:BusinessBackWeb:1.0-SNAPSHOT">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MAVEN</ID>
+          <OriginalElement>com.neuedu:BusinessBackWeb:1.0-SNAPSHOT</OriginalElement>
+          <nodes>
+            <node x="1860.5534552845525" y="769.0">com.neuedu:BusinessBackWeb:1.0-SNAPSHOT</node>
+            <node x="38.0" y="582.0">junit:junit:jar:4.11</node>
+            <node x="0.0" y="495.0">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
+            <node x="133.0" y="582.0">mysql:mysql-connector-java:jar:5.1.45</node>
+            <node x="456.0" y="582.0">org.mybatis:mybatis:jar:3.4.5</node>
+            <node x="576.0" y="582.0">org.mybatis.generator:mybatis-generator-core:jar:1.3.5</node>
+            <node x="818.0" y="582.0">org.mybatis:mybatis-spring:jar:1.3.0</node>
+            <node x="359.0" y="582.0">com.mchange:c3p0:jar:0.9.5</node>
+            <node x="282.0" y="495.0">com.mchange:c3p0:jar:0.9.5/com.mchange:mchange-commons-java:jar:0.2.9</node>
+            <node x="1115.6499999999999" y="408.0">org.springframework:spring-context:jar:4.2.0.RELEASE</node>
+            <node x="1347.8166666666666" y="301.0">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE</node>
+            <node x="1288.6499999999999" y="194.0">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
+            <node x="1502.6378048780487" y="194.0">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE</node>
+            <node x="1288.1499999999999" y="87.0">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE</node>
+            <node x="1261.6499999999999" y="0.0">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE/commons-logging:commons-logging:jar:1.2</node>
+            <node x="940.0656504065037" y="301.0">org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-expression:jar:4.2.0.RELEASE</node>
+            <node x="1309.5534552845525" y="495.0">org.springframework:spring-web:jar:4.2.0.RELEASE</node>
+            <node x="991.9999999999999" y="582.0">org.springframework:spring-webmvc:jar:4.2.0.RELEASE</node>
+            <node x="2681.4284552845525" y="301.0">org.springframework:spring-tx:jar:4.2.0.RELEASE</node>
+            <node x="3145.3791666666666" y="408.0">org.springframework:spring-jdbc:jar:4.2.0.RELEASE</node>
+            <node x="1768.7541666666666" y="582.0">javax.servlet:javax.servlet-api:jar:3.1.0</node>
+            <node x="3600.8791666666666" y="582.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1</node>
+            <node x="3757.3044715447154" y="408.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.apiguardian:apiguardian-api:jar:1.0.0</node>
+            <node x="3460.3791666666666" y="495.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.opentest4j:opentest4j:jar:1.1.1</node>
+            <node x="3601.3791666666666" y="495.0">org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.junit.platform:junit-platform-commons:jar:1.3.1</node>
+            <node x="2143.7541666666666" y="582.0">jstl:jstl:jar:1.2</node>
+            <node x="1543.2541666666666" y="582.0">ch.qos.logback:logback-classic:jar:1.1.2</node>
+            <node x="1531.5041666666666" y="495.0">ch.qos.logback:logback-classic:jar:1.1.2/org.slf4j:slf4j-api:jar:1.7.6</node>
+            <node x="1652.5041666666666" y="495.0">ch.qos.logback:logback-core:jar:1.1.2</node>
+            <node x="1950.7541666666666" y="582.0">com.fasterxml.jackson.core:jackson-databind:jar:2.5.4</node>
+            <node x="2032.7541666666666" y="495.0">com.fasterxml.jackson.core:jackson-databind:jar:2.5.4/com.fasterxml.jackson.core:jackson-annotations:jar:2.5.0</node>
+            <node x="1874.7541666666666" y="495.0">com.fasterxml.jackson.core:jackson-databind:jar:2.5.4/com.fasterxml.jackson.core:jackson-core:jar:2.5.4</node>
+            <node x="2572.1784552845525" y="582.0">com.google.guava:guava:jar:22.0</node>
+            <node x="2263.3791666666666" y="495.0">com.google.guava:guava:jar:22.0/com.google.code.findbugs:jsr305:jar:1.3.9</node>
+            <node x="2368.3791666666666" y="495.0">com.google.guava:guava:jar:22.0/com.google.errorprone:error_prone_annotations:jar:2.0.18</node>
+            <node x="2881.3791666666666" y="495.0">com.google.guava:guava:jar:22.0/com.google.j2objc:j2objc-annotations:jar:1.1</node>
+            <node x="2616.3791666666666" y="495.0">com.google.guava:guava:jar:22.0/org.codehaus.mojo:animal-sniffer-annotations:jar:1.14</node>
+            <node x="3041.3791666666666" y="582.0">com.github.pagehelper:pagehelper:jar:4.1.0</node>
+            <node x="3239.6291666666666" y="582.0">com.github.miemiedev:mybatis-paginator:jar:1.2.17</node>
+            <node x="3340.3791666666666" y="495.0">com.github.miemiedev:mybatis-paginator:jar:1.2.17/org.mybatis:mybatis:jar:3.1.0</node>
+            <node x="3219.3791666666666" y="495.0">com.github.miemiedev:mybatis-paginator:jar:1.2.17/org.slf4j:slf4j-api:jar:1.7.2</node>
+            <node x="3085.3791666666666" y="495.0">com.github.jsqlparser:jsqlparser:jar:0.9.4</node>
+            <node x="3781.8791666666666" y="582.0">joda-time:joda-time:jar:2.3</node>
+            <node x="3916.8791666666666" y="582.0">commons-fileupload:commons-fileupload:jar:1.3</node>
+            <node x="4018.1698170731706" y="495.0">commons-io:commons-io:jar:2.2</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.google.guava:guava:jar:22.0" target="com.google.guava:guava:jar:22.0/org.codehaus.mojo:animal-sniffer-annotations:jar:1.14">
+              <point x="10.875" y="-18.5" />
+              <point x="2626.5534552845525" y="552.0" />
+              <point x="2738.8791666666666" y="552.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE">
+              <point x="57.0" y="-18.5" />
+              <point x="1248.6499999999999" y="388.0" />
+              <point x="1482.3166666666666" y="388.0" />
+              <point x="1482.3166666666666" y="261.0" />
+              <point x="1537.6378048780487" y="261.0" />
+              <point x="-35.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="mysql:mysql-connector-java:jar:5.1.45">
+              <point x="-77.0" y="-18.5" />
+              <point x="1871.5534552845525" y="739.0" />
+              <point x="236.0" y="739.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.junit.platform:junit-platform-commons:jar:1.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.apiguardian:apiguardian-api:jar:1.0.0">
+              <point x="0.0" y="-18.5" />
+              <point x="3716.3791666666666" y="475.0" />
+              <point x="3797.8044715447154" y="475.0" />
+              <point x="-40.5" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="javax.servlet:javax.servlet-api:jar:3.1.0">
+              <point x="-3.666666666666515" y="-18.5" />
+              <point x="1944.886788617886" y="639.0" />
+              <point x="1849.7541666666666" y="639.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.springframework:spring-webmvc:jar:4.2.0.RELEASE">
+              <point x="-40.33333333333326" y="-18.5" />
+              <point x="1908.2201219512192" y="689.0" />
+              <point x="1071.0" y="689.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.github.miemiedev:mybatis-paginator:jar:1.2.17" target="com.github.miemiedev:mybatis-paginator:jar:1.2.17/org.mybatis:mybatis:jar:3.1.0">
+              <point x="45.25" y="-18.5" />
+              <point x="3375.3791666666666" y="562.0" />
+              <point x="3390.3791666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="42.333333333333485" y="-18.5" />
+              <point x="3251.2125" y="358.0" />
+              <point x="3172.5448170731706" y="358.0" />
+              <point x="3172.5448170731706" y="144.0" />
+              <point x="1408.1499999999999" y="144.0" />
+              <point x="56.0" y="18.5" />
+            </edge>
+            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.apiguardian:apiguardian-api:jar:1.0.0">
+              <point x="53.666666666666515" y="-18.5" />
+              <point x="3735.045833333333" y="562.0" />
+              <point x="3908.4719004065037" y="562.0" />
+              <point x="3908.4719004065037" y="475.0" />
+              <point x="3878.8044715447154" y="475.0" />
+              <point x="40.5" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.springframework:spring-web:jar:4.2.0.RELEASE">
+              <point x="-25.666666666666515" y="-18.5" />
+              <point x="1922.886788617886" y="669.0" />
+              <point x="1404.8034552845525" y="669.0" />
+              <point x="31.75" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.mybatis.generator:mybatis-generator-core:jar:1.3.5">
+              <point x="-55.0" y="-18.5" />
+              <point x="1893.5534552845525" y="709.0" />
+              <point x="687.0" y="709.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.core:jackson-databind:jar:2.5.4" target="com.fasterxml.jackson.core:jackson-databind:jar:2.5.4/com.fasterxml.jackson.core:jackson-core:jar:2.5.4">
+              <point x="-43.25" y="-18.5" />
+              <point x="1994.0041666666666" y="562.0" />
+              <point x="1943.7541666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-tx:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE">
+              <point x="-27.25" y="-18.5" />
+              <point x="2708.6784552845525" y="271.0" />
+              <point x="1630.971138211382" y="271.0" />
+              <point x="58.33333333333337" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="-15.875" y="-18.5" />
+              <point x="1357.1784552845525" y="465.0" />
+              <point x="1278.1499999999999" y="465.0" />
+              <point x="1278.1499999999999" y="174.0" />
+              <point x="1344.1499999999999" y="174.0" />
+              <point x="-8.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="com.github.miemiedev:mybatis-paginator:jar:1.2.17">
+              <point x="55.0" y="-18.5" />
+              <point x="2003.5534552845525" y="709.0" />
+              <point x="3330.1291666666666" y="709.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-tx:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="27.25" y="-18.5" />
+              <point x="2763.1784552845525" y="154.0" />
+              <point x="1392.1499999999999" y="154.0" />
+              <point x="40.0" y="18.5" />
+            </edge>
+            <edge source="commons-fileupload:commons-fileupload:jar:1.3" target="commons-io:commons-io:jar:2.2">
+              <point x="0.0" y="-18.5" />
+              <point x="4016.3791666666666" y="562.0" />
+              <point x="4052.4198170731706" y="562.0" />
+              <point x="-34.25" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="commons-io:commons-io:jar:2.2">
+              <point x="84.33333333333348" y="-18.5" />
+              <point x="2032.886788617886" y="749.0" />
+              <point x="4126.379166666667" y="749.0" />
+              <point x="4126.379166666667" y="562.0" />
+              <point x="4120.919817073171" y="562.0" />
+              <point x="34.25" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE">
+              <point x="-47.625" y="-18.5" />
+              <point x="1325.4284552845525" y="475.0" />
+              <point x="1242.3166666666666" y="475.0" />
+              <point x="50.66666666666663" y="18.5" />
+            </edge>
+            <edge source="com.github.pagehelper:pagehelper:jar:4.1.0" target="com.github.jsqlparser:jsqlparser:jar:0.9.4">
+              <point x="0.0" y="-18.5" />
+              <point x="3104.8791666666666" y="562.0" />
+              <point x="3113.6291666666666" y="562.0" />
+              <point x="-28.25" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE">
+              <point x="47.625" y="-18.5" />
+              <point x="1420.6784552845525" y="475.0" />
+              <point x="1502.3166666666666" y="475.0" />
+              <point x="1502.3166666666666" y="271.0" />
+              <point x="1560.971138211382" y="271.0" />
+              <point x="-11.666666666666629" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="0.0" y="-18.5" />
+              <point x="1572.6378048780487" y="164.0" />
+              <point x="1376.1499999999999" y="164.0" />
+              <point x="24.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="com.fasterxml.jackson.core:jackson-databind:jar:2.5.4">
+              <point x="3.6666666666667425" y="-18.5" />
+              <point x="1952.2201219512192" y="639.0" />
+              <point x="2037.2541666666666" y="639.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="com.mchange:c3p0:jar:0.9.5">
+              <point x="-69.66666666666674" y="-18.5" />
+              <point x="1878.8867886178857" y="729.0" />
+              <point x="397.5" y="729.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="ch.qos.logback:logback-classic:jar:1.1.2" target="ch.qos.logback:logback-classic:jar:1.1.2/org.slf4j:slf4j-api:jar:1.7.6">
+              <point x="-38.75" y="-18.5" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.mybatis:mybatis:jar:3.4.5">
+              <point x="-62.33333333333326" y="-18.5" />
+              <point x="1886.2201219512192" y="719.0" />
+              <point x="506.0" y="719.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="ch.qos.logback:logback-classic:jar:1.1.2">
+              <point x="-18.333333333333258" y="-18.5" />
+              <point x="1930.2201219512192" y="659.0" />
+              <point x="1620.7541666666666" y="659.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.opentest4j:opentest4j:jar:1.1.1">
+              <point x="-53.666666666666515" y="-18.5" />
+              <point x="3627.7125" y="562.0" />
+              <point x="3520.8791666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-expression:jar:4.2.0.RELEASE">
+              <point x="-57.0" y="-18.5" />
+              <point x="1134.6499999999999" y="388.0" />
+              <point x="1071.3156504065037" y="388.0" />
+              <point x="43.75" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE">
+              <point x="-42.333333333333485" y="-18.5" />
+              <point x="3166.545833333333" y="378.0" />
+              <point x="2589.5031504065037" y="378.0" />
+              <point x="2589.5031504065037" y="281.0" />
+              <point x="1607.6378048780487" y="281.0" />
+              <point x="35.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.springframework:spring-context:jar:4.2.0.RELEASE">
+              <point x="-33.0" y="-18.5" />
+              <point x="1915.5534552845525" y="679.0" />
+              <point x="1191.6499999999999" y="679.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.springframework:spring-tx:jar:4.2.0.RELEASE">
+              <point x="18.333333333333485" y="-18.5" />
+              <point x="1966.886788617886" y="659.0" />
+              <point x="2252.8791666666666" y="659.0" />
+              <point x="2252.8791666666666" y="388.0" />
+              <point x="2708.6784552845525" y="388.0" />
+              <point x="-27.25" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="com.google.guava:guava:jar:22.0">
+              <point x="25.666666666666515" y="-18.5" />
+              <point x="1974.220121951219" y="669.0" />
+              <point x="2615.6784552845525" y="669.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="jstl:jstl:jar:1.2">
+              <point x="11.0" y="-18.5" />
+              <point x="1959.5534552845525" y="649.0" />
+              <point x="2174.7541666666666" y="649.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE">
+              <point x="19.0" y="-18.5" />
+              <point x="1210.6499999999999" y="378.0" />
+              <point x="1378.8166666666666" y="378.0" />
+              <point x="-31.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-expression:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="0.0" y="-18.5" />
+              <point x="1027.5656504065037" y="154.0" />
+              <point x="1312.1499999999999" y="154.0" />
+              <point x="-40.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.2.0.RELEASE" target="org.springframework:spring-web:jar:4.2.0.RELEASE">
+              <point x="31.600000000000023" y="-18.5" />
+              <point x="1102.6" y="552.0" />
+              <point x="1341.3034552845525" y="552.0" />
+              <point x="-31.75" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.springframework:spring-jdbc:jar:4.2.0.RELEASE">
+              <point x="47.666666666666515" y="-18.5" />
+              <point x="1996.220121951219" y="699.0" />
+              <point x="3208.8791666666666" y="699.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE">
+              <point x="41.333333333333314" y="-18.5" />
+              <point x="1451.1499999999999" y="251.0" />
+              <point x="1514.3044715447154" y="251.0" />
+              <point x="-58.33333333333337" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="com.github.pagehelper:pagehelper:jar:4.1.0">
+              <point x="33.0" y="-18.5" />
+              <point x="1981.5534552845525" y="679.0" />
+              <point x="3104.8791666666666" y="679.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="junit:junit:jar:4.11" target="junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3">
+              <point x="0.0" y="-18.5" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE">
+              <point x="0.0" y="-18.5" />
+              <point x="1071.0" y="562.0" />
+              <point x="1072.0249999999999" y="562.0" />
+              <point x="1072.0249999999999" y="475.0" />
+              <point x="1140.9833333333331" y="475.0" />
+              <point x="-50.66666666666663" y="18.5" />
+            </edge>
+            <edge source="com.fasterxml.jackson.core:jackson-databind:jar:2.5.4" target="com.fasterxml.jackson.core:jackson-databind:jar:2.5.4/com.fasterxml.jackson.core:jackson-annotations:jar:2.5.0">
+              <point x="43.25" y="-18.5" />
+              <point x="2080.5041666666666" y="562.0" />
+              <point x="2130.7541666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.junit.jupiter:junit-jupiter-api:jar:5.3.1" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1/org.junit.platform:junit-platform-commons:jar:1.3.1">
+              <point x="0.0" y="-18.5" />
+              <point x="3681.3791666666666" y="562.0" />
+              <point x="3716.3791666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="-63.19999999999993" y="-18.5" />
+              <point x="1007.8" y="562.0" />
+              <point x="929.5656504065037" y="562.0" />
+              <point x="929.5656504065037" y="144.0" />
+              <point x="1296.1499999999999" y="144.0" />
+              <point x="-56.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.junit.jupiter:junit-jupiter-api:jar:5.3.1">
+              <point x="62.333333333333485" y="-18.5" />
+              <point x="2010.886788617886" y="719.0" />
+              <point x="3681.3791666666666" y="719.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE">
+              <point x="63.19999999999993" y="-18.5" />
+              <point x="1134.1999999999998" y="562.0" />
+              <point x="1521.0041666666666" y="562.0" />
+              <point x="1521.0041666666666" y="281.0" />
+              <point x="1584.3044715447154" y="281.0" />
+              <point x="11.666666666666629" y="18.5" />
+            </edge>
+            <edge source="ch.qos.logback:logback-classic:jar:1.1.2" target="ch.qos.logback:logback-core:jar:1.1.2">
+              <point x="38.75" y="-18.5" />
+              <point x="1659.5041666666666" y="562.0" />
+              <point x="1687.7541666666666" y="562.0" />
+              <point x="-35.25" y="18.5" />
+            </edge>
+            <edge source="com.google.guava:guava:jar:22.0" target="com.google.guava:guava:jar:22.0/com.google.j2objc:j2objc-annotations:jar:1.1">
+              <point x="32.625" y="-18.5" />
+              <point x="2648.3034552845525" y="562.0" />
+              <point x="2973.3791666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-web:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE">
+              <point x="15.875" y="-18.5" />
+              <point x="1388.9284552845525" y="465.0" />
+              <point x="1440.8166666666666" y="465.0" />
+              <point x="31.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="0.0" y="-18.5" />
+              <point x="1409.8166666666666" y="281.0" />
+              <point x="1426.1499999999999" y="281.0" />
+              <point x="1426.1499999999999" y="174.0" />
+              <point x="1360.1499999999999" y="174.0" />
+              <point x="8.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="joda-time:joda-time:jar:2.3">
+              <point x="69.66666666666652" y="-18.5" />
+              <point x="2018.220121951219" y="729.0" />
+              <point x="3839.3791666666666" y="729.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="org.mybatis:mybatis-spring:jar:1.3.0">
+              <point x="-47.666666666666515" y="-18.5" />
+              <point x="1900.886788617886" y="699.0" />
+              <point x="895.0" y="699.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE/commons-logging:commons-logging:jar:1.2">
+              <point x="0.0" y="-18.5" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-jdbc:jar:4.2.0.RELEASE" target="org.springframework:spring-tx:jar:4.2.0.RELEASE">
+              <point x="0.0" y="-18.5" />
+              <point x="3208.8791666666666" y="368.0" />
+              <point x="2763.1784552845525" y="368.0" />
+              <point x="27.25" y="18.5" />
+            </edge>
+            <edge source="com.google.guava:guava:jar:22.0" target="com.google.guava:guava:jar:22.0/com.google.code.findbugs:jsr305:jar:1.3.9">
+              <point x="-32.625" y="-18.5" />
+              <point x="2583.0534552845525" y="562.0" />
+              <point x="2305.8791666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.github.miemiedev:mybatis-paginator:jar:1.2.17" target="com.github.miemiedev:mybatis-paginator:jar:1.2.17/org.slf4j:slf4j-api:jar:1.7.2">
+              <point x="-45.25" y="-18.5" />
+              <point x="3284.8791666666666" y="562.0" />
+              <point x="3269.8791666666666" y="562.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-aop:jar:4.2.0.RELEASE/aopalliance:aopalliance:jar:1.0">
+              <point x="-41.33333333333337" y="-18.5" />
+              <point x="1368.4833333333331" y="281.0" />
+              <point x="1352.1499999999999" y="281.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="ch.qos.logback:logback-core:jar:1.1.2">
+              <point x="-11.0" y="-18.5" />
+              <point x="1937.5534552845525" y="649.0" />
+              <point x="1758.2541666666666" y="649.0" />
+              <point x="35.25" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="com.github.jsqlparser:jsqlparser:jar:0.9.4">
+              <point x="40.333333333333485" y="-18.5" />
+              <point x="1988.886788617886" y="689.0" />
+              <point x="3178.8791666666666" y="689.0" />
+              <point x="3178.8791666666666" y="562.0" />
+              <point x="3170.1291666666666" y="562.0" />
+              <point x="28.25" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="junit:junit:jar:4.11">
+              <point x="-84.33333333333326" y="-18.5" />
+              <point x="1864.2201219512192" y="749.0" />
+              <point x="75.5" y="749.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-expression:jar:4.2.0.RELEASE">
+              <point x="-31.600000000000023" y="-18.5" />
+              <point x="1039.3999999999999" y="552.0" />
+              <point x="983.8156504065038" y="552.0" />
+              <point x="-43.75" y="18.5" />
+            </edge>
+            <edge source="org.springframework:spring-context:jar:4.2.0.RELEASE" target="org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-core:jar:4.2.0.RELEASE">
+              <point x="-19.0" y="-18.5" />
+              <point x="1172.6499999999999" y="164.0" />
+              <point x="1328.1499999999999" y="164.0" />
+              <point x="-24.0" y="18.5" />
+            </edge>
+            <edge source="com.google.guava:guava:jar:22.0" target="com.google.guava:guava:jar:22.0/com.google.errorprone:error_prone_annotations:jar:2.0.18">
+              <point x="-10.875" y="-18.5" />
+              <point x="2604.8034552845525" y="552.0" />
+              <point x="2482.3791666666666" y="552.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.mchange:c3p0:jar:0.9.5" target="com.mchange:c3p0:jar:0.9.5/com.mchange:mchange-commons-java:jar:0.2.9">
+              <point x="0.0" y="-18.5" />
+              <point x="0.0" y="18.5" />
+            </edge>
+            <edge source="com.neuedu:BusinessBackWeb:1.0-SNAPSHOT" target="commons-fileupload:commons-fileupload:jar:1.3">
+              <point x="77.0" y="-18.5" />
+              <point x="2025.5534552845525" y="739.0" />
+              <point x="4016.3791666666666" y="739.0" />
+              <point x="0.0" y="18.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.2143199233716475" x="2162.0" y="1262.0" />
+          <SelectedNodes>
+            <node>org.springframework:spring-context:jar:4.2.0.RELEASE/org.springframework:spring-beans:jar:4.2.0.RELEASE</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>All</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2904">
+          <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="169" column="22" lean-forward="false" selection-start-line="169" selection-start-column="22" selection-end-line="169" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/CartMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="54" column="39" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/CartServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="144" column="52" lean-forward="true" selection-start-line="144" selection-start-column="52" selection-end-line="144" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/CartMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="140" column="0" lean-forward="true" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/ICartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/neuedu/mapper/ShippingMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/neuedu/mapper/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/neuedu/mapper/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="98" column="48" lean-forward="false" selection-start-line="98" selection-start-column="48" selection-end-line="98" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/CartController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="144" column="52" lean-forward="false" selection-start-line="144" selection-start-column="30" selection-end-line="144" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="657">
+          <caret line="93" column="11" lean-forward="false" selection-start-line="93" selection-start-column="11" selection-end-line="93" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.0.RELEASE/spring-web-4.2.0.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/portal/OrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/neuedu/mapper/OrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="84" column="7" lean-forward="false" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="7" />
+          <folding>
+            <marker date="1542027047436" expanded="true" signature="1630:1692" ph="delete from neuedu_order... " />
+            <marker date="1542027047436" expanded="true" signature="1901:2010" ph="insert into neuedu_order... " />
+            <marker date="1542027047436" expanded="true" signature="1901:2303" ph="insert into neuedu_order... " />
+            <marker date="1542027047436" expanded="true" signature="2524:3200" ph="update neuedu_order... " />
+            <marker date="1542027047436" expanded="true" signature="3297:4365" ph="update neuedu_order... " />
+            <marker date="1542027047436" expanded="true" signature="4457:5451" ph="update neuedu_order... " />
+            <marker date="1542027047436" expanded="true" signature="5695:5913" ph="select id, u... neuedu_order" />
+            <marker date="1542027047436" expanded="true" signature="6113:6293" ph="select id, u... neuedu_order" />
+            <marker date="1542027047436" expanded="true" signature="6390:6595" ph="select id, u... neuedu_order" />
+            <marker date="1542027047436" expanded="true" signature="6701:6931" ph="select id, u... neuedu_order" />
+            <marker date="1542027047436" expanded="true" signature="7033:7240" ph="select id, u... neuedu_order" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/controller/backend/OrderManageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="63" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="106" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/IOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/common/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/dao/OrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="47" column="8" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/neuedu/service/impl/OrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="366" column="9" lean-forward="true" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

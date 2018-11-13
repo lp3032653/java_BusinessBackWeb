@@ -17,6 +17,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.UUID;
 
+import static com.neuedu.common.Const.USERNAME;
+
 @Service
 public class UserServiceImpl implements IUserService{
     @Autowired
@@ -50,26 +52,36 @@ public class UserServiceImpl implements IUserService{
      * */
     @Override
     public ServerResponse register(UserInfo userInfo) {
-        //step1:校验用户名是否存在
-        int result = userInfoMapper.checkUsername(userInfo.getUsername());
-        if(result>0){   //用户名存在
-            ServerResponse.createByError("用户名已存在");
+        //校验用户名
+    /*  int result=  userInfoMapper.checkUsername(userInfo.getUsername());
+      if(result>0){//用户名存在
+          return ServerResponse.createByError("用户名已存在");
+      }*/
+        ServerResponse serverResponse=checkValid(userInfo.getUsername(),Const.USERNAME);
+        if(!serverResponse.isSuccess()){
+            return  serverResponse;
         }
-        //step2:校验邮箱
-        int email_result = userInfoMapper.checkEmail(userInfo.getEmail());
-        if(email_result>0){ //邮箱已存在
-            ServerResponse.createByError("邮箱已存在");
+        //校验邮箱
+     /* int eamil_result=userInfoMapper.checkEmail(userInfo.getEmail());
+       if(eamil_result>0){//邮箱存在
+           return ServerResponse.createByError("邮箱存在");
+       }*/
+        ServerResponse serverResponse1=checkValid(userInfo.getEmail(),Const.EMAIL);
+        if(!serverResponse1.isSuccess()){
+            return serverResponse1;
         }
+        //加密算法: hash算法(不对称加密)--》md5、RSA
         //MD5加密
         userInfo.setPassword(MD5Utils.GetMD5Code(userInfo.getPassword()));
-        userInfo.setRole(Const.USERROLE.CUSTOMERUSER);//0代表管理员 1代表普通用户
+        userInfo.setRole(Const.USERROLE.CUSTOMERUSER);//0:管理员 1;普通用户
         //将用户插入到数据库
-        int insert_result = userInfoMapper.insert(userInfo);
+        int  insert_result=  userInfoMapper.insert(userInfo);
         if(insert_result>0){
+            //注册成功
             return ServerResponse.createBySuccess("注册成功");
         }
-        return ServerResponse.createByError("注册失败");
 
+        return ServerResponse.createByError("注册失败");
     }
     /**
      * 校验用户名和邮箱
@@ -82,7 +94,7 @@ public class UserServiceImpl implements IUserService{
         if(str==null||str.equals("")){
             return  ServerResponse.createByError("参数必须传递");
         }
-        if(type.equals(Const.USERNAME)){
+        if(type.equals(USERNAME)){
             //校验用户名
             int username_result= userInfoMapper.checkUsername(str);
             if(username_result>0){
@@ -160,7 +172,7 @@ public class UserServiceImpl implements IUserService{
             return ServerResponse.createByError("新密码必须传");
         }
         //校验用户名是否存在
-        ServerResponse serverResponse=  checkValid(username,Const.USERNAME);
+        ServerResponse serverResponse=  checkValid(username, USERNAME);
         if(serverResponse.isSuccess()){//不存在
             return  ServerResponse.createByError("用户名不存在");
         }

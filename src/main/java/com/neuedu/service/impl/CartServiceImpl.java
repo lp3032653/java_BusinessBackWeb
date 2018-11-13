@@ -80,7 +80,6 @@ public class CartServiceImpl implements ICartService {
                 }
                 cartProductVOList.add(cartProductVO);
             }
-
         }
 
         //step3:组装cartvo
@@ -94,26 +93,26 @@ public class CartServiceImpl implements ICartService {
 
 
     @Override
-    public ServerResponse add(Integer userid, Integer productId, Integer count) {
+    public ServerResponse add(Integer userId, Integer productId, Integer count) {
         //step1:非空判断
-        if(productId==null||count==null){
-            return ServerResponse.createByError("参数错误");
-        }
+//        if(productId==null||count==null){
+//            return ServerResponse.createByError("参数错误");
+//        }
         //step2:根据productid查询Cart
-        Cart cart=  cartMapper.findCartByProductIdAndUserid(productId,userid);
+        Cart cart=  cartMapper.findCartByProductIdAndUserid(userId,productId);
         if(cart==null){//购物车中没有改商品信息
             Cart cartItem=new Cart();
             cartItem.setQuantity(count);
             cartItem.setChecked(Const.Cart.CHECKED);
             cartItem.setProductId(productId);
-            cartItem.setUserId(userid);
+            cartItem.setUserId(userId);
             cartMapper.insert(cartItem);
         }else{//购物车已经存在改商品，需要更新商品的数量
 
             cart.setQuantity(cart.getQuantity()+count);
             cartMapper.updateByPrimaryKeyBySelectActive(cart);
         }
-        CartVO cartVO=getCartVOLimit(userid);
+        CartVO cartVO=getCartVOLimit(userId);
         return ServerResponse.createBySuccess(cartVO);
     }
 
